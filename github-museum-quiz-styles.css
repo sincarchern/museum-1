@@ -1,0 +1,41 @@
+.quiz-button {
+    transition: all 0.3s ease;
+}
+
+.quiz-button:hover {
+    transform: translateX(8px);
+}
+
+.score-animation {
+    animation: popIn 0.5s ease-out;
+}
+
+@keyframes popIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.trophy-animation {
+    animation: bounce 1s ease infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@media (max-width: 640px) {
+    .quiz-container {
+        padding: 1rem;
+    }
+}
